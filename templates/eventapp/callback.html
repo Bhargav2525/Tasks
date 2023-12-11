@@ -1,0 +1,23 @@
+<!Doctype HTML>
+<html>
+<head>
+    <title> Events</title>
+    <style>
+        .div1{
+            margin: auto;
+            width: 40%;
+            border: 10px solid blue;
+            padding: 20px;
+            height : 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class = "div1">
+        <center> <h1> Your Events </h1> </center>
+        {% for key, value in events.items %}
+        <li>Event {{ key }}: {{ value }}</li>
+        {% endfor %}
+    </div>
+</body>
+</html>
